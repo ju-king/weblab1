@@ -25,14 +25,12 @@ public class App {
             if (account.equals(userAccount))
                 if (sha256hex(password).equals(userPassword)){
                     flag = true;
-                    System.out.println("***********************************************************");
                     System.out.println("login");
                     System.out.println("account:"+userAccount);
                     System.out.println("password:"+userPassword);
                 }
         }
         if (!flag){
-            System.out.println("***********************************************************");
             System.out.println("login denied");
         }
         br.close();
